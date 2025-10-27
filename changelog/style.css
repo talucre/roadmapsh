@@ -1,0 +1,60 @@
+.container {
+  width: 600px;
+}
+
+.item-container {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.date {
+  flex: 1;
+  color: lightslategray;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.bullet-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bullet-line {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+}
+
+.bullet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.change {
+  flex: 2;
+  padding-left: 25px;
+}
+
+.item-container:last-of-type .bullet-line {
+  background-color: unset;
+  position: relative;
+  left: 1px;
+  border-left: 2px dotted lightslategray;
+}
+
+.item-container:last-of-type .bullet {
+  background-color: lightslategray;
+  border-color: lightslategray;
+}
