@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 150px auto;
+}
+
+.profile-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  padding: 3rem;
+  border: 2px solid #000;
+  border-radius: 1.5rem;
+}
+
+.form {
+  flex: 4;
+
+  label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  > [class|="user"] {
+    margin-bottom: 1rem;
+
+    div {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+
+    font-size: 1.2rem;
+
+    &.invalid {
+      border-color: red;
+
+      &::placeholder {
+        color: red;
+      }
+    }
+
+    &:focus::placeholder {
+      color: grey;
+    }
+  }
+
+  .user-details-error,
+  .user-password-error {
+    font-size: 1rem;
+    font-weight: 400;
+    color: red;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .user-password,
+  .confirm-password {
+    position: relative;
+  }
+
+  .show-password-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    color: #000;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top: 72.5%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    transition: background-color 0.1s ease;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.075s ease;
+
+    &:hover {
+      background-color: #303030;
+    }
+
+    &:active {
+      transform: scale(0.975);
+    }
+  }
+}
+
+.profile-progress {
+  flex: 3;
+  background-color: aliceblue;
+}
