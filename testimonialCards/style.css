@@ -253,6 +253,10 @@ img {
 }
 
 @media (width < 540px) {
+  .reviews-container {
+    padding: 0 1rem;
+  }
+
   .block {
     .images-slider {
       .images {
