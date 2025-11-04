@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tooltip UI</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="tabs-component">
+        <div class="tabs-btns">
+          <button onclick="openTab(event, 'first-tab')" class="active">
+            First Tab
+          </button>
+          <button onclick="openTab(event, 'second-tab')">Second Tab</button>
+          <button onclick="openTab(event, 'third-tab')">Third Tab</button>
+          <button onclick="openTab(event, 'fourth-tab')">Fourth Tab</button>
+        </div>
+        <div id="first-tab" class="tab active">
+          <span>First</span> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Dicta sunt beatae hic unde animi expedita velit possimus
+          doloremque molestiae, nihil dolores, corrupti delectus pariatur
+          adipisci. Quisquam ullam recusandae maiores beatae?
+        </div>
+        <div id="second-tab" class="tab">
+          <span>Second</span> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Dicta sunt beatae hic unde animi expedita velit possimus
+          doloremque molestiae, nihil dolores, corrupti delectus pariatur
+          adipisci. Quisquam ullam recusandae maiores beatae?
+        </div>
+        <div id="third-tab" class="tab">
+          <span>Third</span> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Dicta sunt beatae hic unde animi expedita velit possimus
+          doloremque molestiae, nihil dolores, corrupti delectus pariatur
+          adipisci. Quisquam ullam recusandae maiores beatae?
+        </div>
+        <div id="fourth-tab" class="tab">
+          <span>Fourth</span> Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Dicta sunt beatae hic unde animi expedita velit possimus
+          doloremque molestiae, nihil dolores, corrupti delectus pariatur
+          adipisci. Quisquam ullam recusandae maiores beatae?
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
