@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.cookie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 250px;
+  height: 275px;
+  padding: 1.25rem;
+  background-color: #000;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 1s, bottom 0.5s;
+
+  position: fixed;
+  right: 1rem;
+  bottom: 0;
+}
+
+.cookie.visible {
+  visibility: visible;
+  opacity: 1;
+  bottom: 1rem;
+}
+
+.cookie__image {
+  font-size: 2.5rem;
+}
+
+.cookie__close-btn {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: -0.5rem;
+  transform: translate(-50%, -50%);
+  transition: background 0.1s;
+}
+
+.cookie__close-btn:hover {
+  background: #363636;
+}
+
+.cookie__close-btn:active {
+  background: #4a4a4a;
+}
+
+.cookie__desc {
+  margin-bottom: 1rem;
+}
+
+.fa-xmark {
+  position: relative;
+  top: 1px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.1s, scale 0.25s;
+}
+
+.btn:hover {
+  background: #dbdbdb;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
