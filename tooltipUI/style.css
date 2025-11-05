@@ -1,85 +1,85 @@
 *,
 *:before,
 *:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .container {
-  width: min(500px, 100%);
-  margin: 0 auto;
-  margin-top: 100px;
+    width: min(500px, 100%);
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .nav {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .nav-item {
-  position: relative;
+    position: relative;
 }
 
 .nav-item::after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: slategray;
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%) translateX(50%);
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: slategray;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%) translateX(50%);
 }
 
 .nav-item:last-child::after {
-  display: none;
+    display: none;
 }
 
 .nav-link {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .tooltip {
-  position: relative;
-  padding: 0.5rem;
-  font-style: 1.5rem;
+    position: relative;
+    padding: 0.5rem;
+    font-style: 1.5rem;
 }
 
 .tooltip:hover .tooltip__text {
-  top: -130%;
-  visibility: visible;
-  opacity: 1;
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
 }
 
 .tooltip__text {
-  padding: 0.5rem;
-  background-color: #000;
-  color: #fff;
-  border-radius: 0.5rem;
-  white-space: nowrap;
-  position: absolute;
-  top: -75%;
-  left: 50%;
-  transform: translateX(-50%);
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
 }
 
 .tooltip__text::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 15px solid;
-  border-color: #000 #0000 #0000 #0000;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
 }

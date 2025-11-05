@@ -1,94 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form UI</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="container">
-      <div class="profile-form">
-        <form class="form">
-          <div class="user-details">
-            <div class="user-full-name">
-              <label for="name">Full Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="What should we call you?"
-                required
-              />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form UI</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <div class="profile-form">
+                <form class="form">
+                    <div class="user-details">
+                        <div class="user-full-name">
+                            <label for="name">Full Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="What should we call you?"
+                                required
+                            />
+                        </div>
+                        <div class="user-email">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="email@gmail.com"
+                                required
+                            />
+                        </div>
+                        <div class="user-details-error hidden">
+                            Email is already taken
+                        </div>
+                    </div>
+                    <div class="user-password">
+                        <div class="user-password">
+                            <input
+                                type="checkbox"
+                                id="show-password-checkbox"
+                            />
+                            <label
+                                for="show-password-checkbox"
+                                class="show-password-toggle"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </label>
+                            <label for="password">Enter Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder="xxxxxxxx"
+                                required
+                            />
+                        </div>
+                        <div class="confirm-password">
+                            <input
+                                type="checkbox"
+                                id="show-confirm-password-checkbox"
+                            />
+                            <label
+                                for="show-confirm-password-checkbox"
+                                class="show-password-toggle"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </label>
+                            <label for="confirm-password"
+                                >Confirm Password</label
+                            >
+                            <input
+                                type="password"
+                                name="confirm-password"
+                                id="confirm-password"
+                                placeholder="xxxxxxxx"
+                                required
+                            />
+                        </div>
+                        <div class="user-password-error hidden">
+                            Password is to short
+                        </div>
+                    </div>
+                    <input type="submit" value="Update Profile" />
+                </form>
+                <div class="profile-progress">
+                    <div class="progress-bar" style="--progress: 65">
+                        <span class="progress">65%</span>
+                    </div>
+                    <h4>Profile Completeness</h4>
+                    <ul class="profile-completeness">
+                        <li class="completeness-item done">Create Account</li>
+                        <li class="completeness-item done">
+                            Update Roadmap Progress
+                        </li>
+                        <li class="completeness-item done">
+                            Setup Public Profile
+                        </li>
+                        <li class="completeness-item">
+                            Complete your first project
+                        </li>
+                        <li class="completeness-item">Invite your Friends</li>
+                    </ul>
+                </div>
             </div>
-            <div class="user-email">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="email@gmail.com"
-                required
-              />
-            </div>
-            <div class="user-details-error hidden">Email is already taken</div>
-          </div>
-          <div class="user-password">
-            <div class="user-password">
-              <input type="checkbox" id="show-password-checkbox" />
-              <label for="show-password-checkbox" class="show-password-toggle">
-                <i class="fa-regular fa-eye"></i>
-              </label>
-              <label for="password">Enter Password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="xxxxxxxx"
-                required
-              />
-            </div>
-            <div class="confirm-password">
-              <input type="checkbox" id="show-confirm-password-checkbox" />
-              <label
-                for="show-confirm-password-checkbox"
-                class="show-password-toggle"
-              >
-                <i class="fa-regular fa-eye"></i>
-              </label>
-              <label for="confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-                placeholder="xxxxxxxx"
-                required
-              />
-            </div>
-            <div class="user-password-error hidden">Password is to short</div>
-          </div>
-          <input type="submit" value="Update Profile" />
-        </form>
-        <div class="profile-progress">
-          <div class="progress-bar" style="--progress: 65">
-            <span class="progress">65%</span>
-          </div>
-          <h4>Profile Completeness</h4>
-          <ul class="profile-completeness">
-            <li class="completeness-item done">Create Account</li>
-            <li class="completeness-item done">Update Roadmap Progress</li>
-            <li class="completeness-item done">Setup Public Profile</li>
-            <li class="completeness-item">Complete your first project</li>
-            <li class="completeness-item">Invite your Friends</li>
-          </ul>
-        </div>
-      </div>
-    </main>
+        </main>
 
-    <script
-      src="https://kit.fontawesome.com/f9af6105b2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-  </body>
+        <script
+            src="https://kit.fontawesome.com/f9af6105b2.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js"></script>
+    </body>
 </html>

@@ -1,69 +1,69 @@
 *,
 *:before,
 *:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .container {
-  width: min(700px, 100%);
-  margin: 0 auto;
-  margin-top: 100px;
+    width: min(700px, 100%);
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 .tabs-component {
-  padding: 2rem;
-  border: 2px solid #000;
-  border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid #000;
+    border-radius: 1rem;
 }
 
 .tabs-btns {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tabs-btns button {
-  flex: 1 1 0;
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  color: gray;
-  border: none;
-  border-bottom: 2px solid #0000;
-  background: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
+    flex: 1 1 0;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    color: gray;
+    border: none;
+    border-bottom: 2px solid #0000;
+    background: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
 
-  transition: background 0.1s;
+    transition: background 0.1s;
 }
 
 .tabs-btns button:hover,
 .tabs-btns button.active {
-  color: #000;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-color: #000;
+    color: #000;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: #000;
 }
 
 .tabs-btns button:hover {
-  background: lightgray;
+    background: lightgray;
 }
 
 .tab {
-  display: none;
-  font-size: 1.25rem;
+    display: none;
+    font-size: 1.25rem;
 }
 
 .tab.active {
-  display: block;
+    display: block;
 }
 
 .tab span {
-  font-weight: 700;
-  color: lightcoral;
+    font-weight: 700;
+    color: lightcoral;
 }

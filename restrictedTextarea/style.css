@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: min(700px, 100%);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.textarea__wrapper {
+    position: relative;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 10rem;
+    resize: none;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.textarea.invalid {
+    border-color: red;
+    color: red;
+
+    ~ .char-counter {
+        color: red;
+    }
+}
+
+.char-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
